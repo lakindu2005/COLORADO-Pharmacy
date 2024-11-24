@@ -1,0 +1,352 @@
+*{
+    font: poppins;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color:darkblue;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*getting rid of the dots*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #000000;
+    color:#FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    text-align: center;
+}
+
+p{
+    line-height: 1.5;
+}
+
+/*==Navigation==========================*/
+.navigation{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.menu{
+    display:flex;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.menu li a{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 30px;
+    margin: 0px 20px;
+    color: white;
+    font-size: 35px;
+    font-weight: 350;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+    display: block;
+}
+
+.logo img{
+    width: 300px;
+    height: auto;
+}
+ 
+.menu li a:hover{
+    color: lightgreen;
+    transition: all ease 0.3s;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+}
+
+/* Centered text */
+.text-block {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 590px;
+    height: 160px;
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container .content {
+    position: absolute; /* Position the background text */
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    text-align: left;
+    line-height: 1.5; /*line spacing to 1.5 */
+    width: 200%; 
+    padding: 20px; 
+  }
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+    .text-block {
+        font-size: 9.5px; /* Adjust font size for better readability on smaller screens */
+        padding: 9px; /* Space between text and all borders */
+        max-width: 93%; /* Ensure the text block doesn't overflow the container */
+        top: 33.7%;
+        left: 46.85%;
+        transform: translate(-50%, -55%);
+    }
+}
+/* Responsive design for transparent text on image ends*/
+
+
+/*About Us*/
+@media (max-width: 768px) {
+.content iframe, .content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content table {
+    display: block; /* Change the display of tables to block */
+}
+
+.content table th{
+    font-size: 10px;
+}
+
+.content table tr {
+    display: block; /* Change the display of table rows to block */
+    margin-bottom: 20px; /* Add some space between table rows */
+}
+
+.content table tr td {
+    display: block; /* Change the display of table cells to block */
+}
+
+img {
+    max-width: 90%; /* Slightly reduce width */
+    margin: 10px auto; /* Add some spacing */
+}
+}
+
+
+
+/*Order Page*/
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e9bff;
+    transition-duration:0.125s;
+    cursor: pointer;
+}
+
+.order-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.order-item {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.order-item h2 {
+    margin-top: 0;
+    padding:5px;
+}
+
+label, p {
+    margin: 10px 0 5px;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/*Order page styling ends here*/
+
+
+
+/*Checkout Page*/
+.centered-form {
+    background: #ffffff54;
+    width: 100%;
+    max-width: 750px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.centered-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-form div {
+    margin-bottom: 15px;
+}
+
+.centered-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.centered-form textarea {
+    width: 710px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.centered-form button {
+    background-color: #008cff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.centered-form button[type="reset"]{
+    background-color: #f44336;
+    margin-right: 10px;
+}
+
+.centered-form button:hover {
+    opacity: 0.8;
+}
+/*Checkout page styling ends here*/
+
+
+
+
+
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .order-list {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+
+    .text-block {
+        font-size: 1rem;
+    }
+
+    .centered-form textarea {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu li a {
+        font-size: 14px;
+    }
+
+    .text-block {
+        font-size: 0.9rem;
+    }
+
+    .order-item {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+}

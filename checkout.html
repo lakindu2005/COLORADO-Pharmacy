@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        
+        <!--==Title===========-->
+        <title>COLORADO Pharmacy</title>
+    
+        <!--==Stylesheet=========-->
+        <link rel="stylesheet" type="text/css" href="styles.css">    
+    
+        <!--==CO-icon===========-->
+        <link rel="shortcut icon" href="images/Flag_of_Colorado (1).svg"/>
+    
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navigation">
+                
+            <!---logo-->
+            <a href="index.html"  class="logo"> 
+                <img src="images/COLORADO Pharmacy.png" alt="Colorado Pharmacy Logo" class="hello">
+    
+            <!--menu------>
+            <nav class="navigation">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+            </nav>
+    
+            
+        </header>
+
+        <br>
+        <br>
+
+        <h1>Checkout</h1>
+        <br>
+        
+        <!--nav-end-------------->
+        <div class="centered-form-container">
+            <form action="checkout.html" method="POST" class="centered-form">  
+            
+                <div>
+                    <label for="FName">First Name:</label>
+                    <input type="text" id="FName" name="FName" placeholder="Enter first name" required>
+                </div>
+    
+                <br>
+    
+                <div>
+                    <label for="LName">Last Name:</label>
+                    <input type="text" id="LName" name="LName" placeholder="Enter last name" required>
+                </div>
+    
+                <br>
+    
+                <div>
+                    <label for="mobileNumber">Mobile Number:</label>
+                    <input type="text" id="mobileNumber" name="MobileNumber" maxlength="10" placeholder="07XXXXXXXX" required>
+                </div>
+    
+                <br>
+    
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+    
+                <br>
+    
+                <div>
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass" maxlength="12" required>
+                </div>
+    
+                <br>
+    
+                <p><h2>We only accept card payment</h2></p>
+    
+                <br>
+    
+                <div>
+                    <label for="expiry">Expiry Date of card:</label>
+                    <input type="date" id="expiry" name="expiry">
+                </div>
+    
+                <div>
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="CardNumber" placeholder="12345678XXXXXXXX" minlength="16" maxlength="16" required>
+                </div>
+    
+                <div>
+                    <label for="cvv">CVV (Card Verification Value):</label>
+                    <input type="text" id="cvv" name="CVV" minlength="3" maxlength="4" required>
+                </div>
+    
+                <br>
+    
+                <div>
+                    <label for="address">Address:</label>
+                    <textarea id="Address" name="address" placeholder="Enter your address" required></textarea>
+                </div>
+    
+                <br>
+    
+                <div>
+                    <label for="City">City:</label>
+                    <input type="text" id="City" name="City" placeholder="Enter your city" required>
+                </div>
+    
+                <br>
+    
+                <div>
+                    <label for="County">County:</label>
+                    <input type="text" id="County" name="County" placeholder="Enter your county" required>
+                </div>
+    
+                <br>
+    
+                <div>
+                    <label for="State">State:</label>
+                    <input type="text" id="State" name="State" placeholder="Enter your state" required>
+                </div>
+    
+                <br>
+    
+                <div>
+                    <label for="ZIPCode">ZIP Code:</label>   
+                    <input type="text" id="ZIPCode" name="ZIPCode" placeholder="Enter ZIP Code" maxlength="5" required>
+                </div>
+    
+                <br>
+    
+                <button type="reset" id="reset">Reset</button>
+                <button type="submit">Submit</button>
+    
+            </form>
+        </div>
+
+        <br>
+        <br>
+    
+        <script src="checkout.js"></script>
+         
+
+    
+</body>
+
+<footer>
+    <br>
+    <br>
+    <h2>Get to Know Us</h2>
+    <br>
+    <p>
+        COLORADO PHARMACY<br>
+        No:357, Denver, Denver County, Colorado, USA<br>
+        Mobile: +94 70 1503871<br>
+        info@coloradopharmacy.com
+    </p>    
+    <br>
+    <br>  
+</footer>
+</html>
